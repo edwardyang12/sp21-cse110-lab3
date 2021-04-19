@@ -244,6 +244,7 @@
 }
 #visuals details{
     display: block;
+    position: relative;
 }
 
 #main + #footer{
