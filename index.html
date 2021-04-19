@@ -5,34 +5,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="favicon.ico" rel="icon" type="image/x-icon"/>
 	<title>CSE 110 Lab 2</title>
+    <link rel="stylesheet" href="main.css" type="text/css"/>
     
 </head>
-<body>
+<body id="page">
     <header id="top">
         <nav class="topnav">
-			<a href="#top">Top of page</a>
-			<a  href="#entry1">Entry 1</a>
-			<a  href="#entry2">Entry 2</a>
-			<a  href="#entry3">Entry 3</a>
+			<a class ="hoverable" href="#top">Top of page</a>
+			<a class ="hoverable" href="#entry1">Entry 1</a>
+			<a class ="hoverable" href="#entry2">Entry 2</a>
+			<a class ="hoverable" href="#entry3">Entry 3</a>
 		</nav>
     </header>
-    <main>
+    <main id="main">
         <section id ="entry1">
             <h1>Today</h1>
             <h2>Okay Day</h2>
             <h3>Worked on homework</h3>
-            <p> <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+            <p > <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
 				<b>Ut enim ad minim veniam</b>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
 				<i>Duis aute irure dolor</i> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
 				<span>Excepteur sint occaecat </span> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
         </section>
-        <hr>
+
         <section id ="entry2">
             <h1>Yesterday</h1>
             <h2>Okay Day</h2>
             <h3>Random</h3>
-            <ul>
-                <li>Item</li>
+            <ul style="font-size: 20px">
+                <li target="highlight">Item</li>
                 <li>Item</li>
                 <li>Item</li>
             </ul>
@@ -41,12 +42,12 @@
             </pre>
             
         </section>
-        <hr>
+
         <section id ="entry3">
             <h1>Two days ago</h1>
             <h2>Eh Day</h2>
             <h3>Random</h3>
-            <ol>
+            <ol style="font-size: .5cm">
                 <li>Item 1</li>
                 <li>Item 2</li>
                 <li>Item 3</li>
@@ -56,12 +57,13 @@
 				<figcaption>me</figcaption>
 			</figure>
         </section>
-        <hr>
-        <section>
+
+        <section id="random">
             <h1>Form</h1>
+            <h2>Fill this out</h2>
             <form>
                 <fieldset>
-                    <legend>Forms</legend>
+                    <legend style="font-size: 10mm">Forms</legend>
                     <label for="checkbox">Checkbox: </label>
                     <input type="checkbox" id="checkbox"><br>
 
@@ -96,11 +98,11 @@
                 </fieldset>
             </form>
         </section>
-        <div>
+        <div id="visuals">
             <audio controls>
                 <source src="woosh.mp3" type="audio/mpeg">
             </audio>
-            <video width="320" height="240" controls>
+            <video width="320px" height="240px" controls>
 				<source src="earth.mov" type="video/mp4">
 			</video>
             <details>
@@ -109,7 +111,7 @@
               </details>
         </div>
     </main>
-    <footer>
+    <footer id="footer">
         <p>Hello</p>
     </footer>
 </body>
